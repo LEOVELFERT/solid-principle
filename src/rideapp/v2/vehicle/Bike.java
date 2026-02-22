@@ -1,4 +1,4 @@
-package rideapp.v2;
+package rideapp.v2.vehicle;
 
 public class Bike extends Vehicle {
     public Bike(String numberPlate) {
@@ -6,7 +6,7 @@ public class Bike extends Vehicle {
     }
 
     @Override
-    double getFarePerKm() {
+    public double getFarePerKm() {
         return 10;
     }
 }

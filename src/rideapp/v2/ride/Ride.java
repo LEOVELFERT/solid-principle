@@ -1,4 +1,8 @@
-package rideapp.v2;
+package rideapp.v2.ride;
+
+import rideapp.v2.fare.FareStrategy;
+import rideapp.v2.user.Driver;
+import rideapp.v2.user.Passenger;
 
 public class Ride {
     private Passenger passenger;

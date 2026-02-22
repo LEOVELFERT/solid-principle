@@ -1,5 +1,8 @@
-package rideapp.v2;
+package rideapp.v2.user;
 
+
+import rideapp.v2.location.Location;
+import rideapp.v2.vehicle.Vehicle;
 
 public class Driver extends User {
     private Vehicle vehicle;
@@ -14,7 +17,7 @@ public class Driver extends User {
     }
 
     @Override
-    void notify(String msg) {
+    public void notify(String msg) {
         System.out.println("Driver" + msg);
     }
 }

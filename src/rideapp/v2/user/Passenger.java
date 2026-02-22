@@ -1,5 +1,7 @@
-package rideapp.v2;
+package rideapp.v2.user;
 
+
+import rideapp.v2.location.Location;
 
 public class Passenger extends User {
     public Passenger(String name, String email, Location location) {
@@ -7,7 +9,7 @@ public class Passenger extends User {
     }
 
     @Override
-    void notify(String msg) {
+    public void notify(String msg) {
         System.out.println("Passenger"+msg);
     }
     //any other methods??

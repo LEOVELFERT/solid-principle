@@ -1,4 +1,6 @@
-package rideapp.v2;
+package rideapp.v2.user;
+
+import rideapp.v2.location.Location;
 
 abstract class User {
     protected String name;

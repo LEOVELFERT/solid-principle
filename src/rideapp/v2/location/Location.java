@@ -1,4 +1,4 @@
-package rideapp.v2;
+package rideapp.v2.location;
 
 public class Location {
     private double lattitude;

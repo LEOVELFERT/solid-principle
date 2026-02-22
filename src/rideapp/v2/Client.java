@@ -1,6 +1,15 @@
 package rideapp.v2;
 
 
+import rideapp.v2.fare.StandardFareStrategy;
+import rideapp.v2.location.Location;
+import rideapp.v2.ride.RideMatchingSystem;
+import rideapp.v2.user.Driver;
+import rideapp.v2.user.Passenger;
+import rideapp.v2.vehicle.Bike;
+import rideapp.v2.vehicle.Car;
+import rideapp.v2.vehicle.Vehicle;
+
 public class Client {
     public static void main(String[] args) {
         Location loc1 = new Location(12.9716, 77.5946);

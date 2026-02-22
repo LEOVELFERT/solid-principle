@@ -1,6 +1,6 @@
-package rideapp.v2;
+package rideapp.v2.vehicle;
 
-abstract class Vehicle {
+public abstract class Vehicle {
     protected String numberPlate;
 
     public Vehicle(String numberPlate) {
@@ -8,5 +8,5 @@ abstract class Vehicle {
     }
 
     //Fare Calculation
-    abstract double getFarePerKm();
+    public abstract double getFarePerKm();
 }

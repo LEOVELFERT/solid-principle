@@ -1,4 +1,9 @@
-package rideapp.v2;
+package rideapp.v2.ride;
+
+import rideapp.v2.location.Location;
+import rideapp.v2.fare.FareStrategy;
+import rideapp.v2.user.Driver;
+import rideapp.v2.user.Passenger;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,7 +47,7 @@ public class RideMatchingSystem {
         double minDistance = Double.MAX_VALUE;
         Driver nearestDriver = null;
         for (Driver driver : availableDrivers) {
-            double distance = location.calcDistance(driver.location);
+            double distance = location.calcDistance(driver.getLocation());
             if (minDistance > distance) {
                 minDistance = distance;
                 nearestDriver = driver;
