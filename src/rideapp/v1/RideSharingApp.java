@@ -66,7 +66,8 @@ public class RideSharingApp {
 
     //Violations
     //----------
-    // SRP- this class does have multiple funcionalities 1)Drivers ,Passengers,RideBooking,Fare Calculation, Distance Calculation
+    // SRP- this class does have multiple funcionalities
+    // 1)Drivers ,Passengers,RideBooking,Fare Calculation, Distance Calculation
     // OCP- not that much easy to follow  OCP here
     // LSP - Vehicle class breaks LSP here
     // ISP - In better way we can segragate interface and we can use it wisely here

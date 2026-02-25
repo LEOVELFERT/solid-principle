@@ -1,10 +1,10 @@
-package commandpattern;
+package behavioural.commandpattern;
 
-import commandpattern.command.impl.BlueCommand;
-import commandpattern.command.impl.BoldCommand;
-import commandpattern.command.impl.ItalicCommand;
-import commandpattern.invoker.Button;
-import commandpattern.receiver.TextEditor;
+import behavioural.commandpattern.command.impl.BlueCommand;
+import behavioural.commandpattern.command.impl.BoldCommand;
+import behavioural.commandpattern.command.impl.ItalicCommand;
+import behavioural.commandpattern.invoker.Button;
+import behavioural.commandpattern.receiver.TextEditor;
 
 public class CommandClient {
     public static void main(String[] args) {

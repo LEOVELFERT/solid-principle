@@ -1,6 +1,6 @@
-package commandpattern.invoker;
+package behavioural.commandpattern.invoker;
 
-import commandpattern.command.Command;
+import behavioural.commandpattern.command.Command;
 
 public class Button {
     private Command command;

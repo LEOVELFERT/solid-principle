@@ -28,7 +28,7 @@ public class Client {
         Passenger passenger1 = new Passenger("Jhon", "jhon@gmail.com", loc1);
         Passenger passenger2 = new Passenger("Rahul", "jhon@gmail.com", loc3);
 
-        RideMatchingSystem rideMatchingSystem = new RideMatchingSystem();
+        RideMatchingSystem rideMatchingSystem = new RideMatchingSystem();   //Liskov
         rideMatchingSystem.addDriver(driver1);
         rideMatchingSystem.addDriver(driver2);
 

@@ -1,7 +1,7 @@
-package commandpattern.command.impl;
+package behavioural.commandpattern.command.impl;
 
-import commandpattern.command.Command;
-import commandpattern.receiver.TextEditor;
+import behavioural.commandpattern.command.Command;
+import behavioural.commandpattern.receiver.TextEditor;
 
 public class BlueCommand implements Command {
     private TextEditor textEditor;

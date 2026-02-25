@@ -16,19 +16,21 @@ public class RideMatchingSystem {
     }
 
     public void requestRide(Passenger passenger, double distance, FareStrategy fareStrategy) {
-        //base case
+        //1)base case: checking drivers are available or not if not sending messages to them.
         if (availableDrivers.isEmpty()) {
             passenger.notify("Drivers are unAvailable...!");
         }
-        //find the nearest Driver
+        //2)find the nearest Driver
         Driver nearestDriver = findNearestDriver(passenger.getLocation());
 
-        //Mediator
+        //3) once asign the driver we need to remove the driver from the List which means active or not.
+        // future we can create some value for driver active or not we can create the enum based on that we can decide.
         availableDrivers.remove(nearestDriver);
+        //4) send notification to the passenger like ride scheduledd
         passenger.notify("Ride Scheduled successfully..." + nearestDriver);
-
+        //5) aftewards we need to book the ride based on the distance calculation
         Ride ride = new Ride(passenger, nearestDriver, distance, fareStrategy);
-        ride.calculateFare();
+        ride.calculateFare();   //it will caluclate teh fare and store it in the ride object.
 
         passenger.notify("Ride scheduled with fare + Rs" + ride.getFare());
         nearestDriver.notify("you have a new ride request for " + ride.getFare());
@@ -47,7 +49,7 @@ public class RideMatchingSystem {
         double minDistance = Double.MAX_VALUE;
         Driver nearestDriver = null;
         for (Driver driver : availableDrivers) {
-            double distance = location.calcDistance(driver.getLocation());
+            double distance = location.calcDistance(driver.getLocation());  //better we can create as the utility method.
             if (minDistance > distance) {
                 minDistance = distance;
                 nearestDriver = driver;

@@ -1,4 +1,4 @@
-package commandpattern.receiver;
+package behavioural.commandpattern.receiver;
 
 public class TextEditor {
 
