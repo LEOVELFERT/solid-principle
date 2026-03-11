@@ -1,0 +1,5 @@
+firs create one class name end with Builder
+then provide all the variables whatever present in the main product ex(whatever values present in the House )
+then create the public constructor with mandatory fields if it has.
+then set the values step by step
+finaly create the build method and it will call the main product constructor to create the Main Product passing builder Object.

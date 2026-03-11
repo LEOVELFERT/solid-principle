@@ -1,5 +1,5 @@
 package behavioural.commandpattern.receiver;
-
+//receiver
 public class TextEditor {
 
     public void updateBold() {

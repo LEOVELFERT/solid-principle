@@ -1,5 +1,5 @@
 package behavioural.momentopattern;
-
+//Originator
 public class TextEditorOriginator {
     private String content;
 

@@ -14,6 +14,7 @@ public class RealImage implements Image {
 
     @Override
     public void display() {
+        //another costly process will consume lots of memory
         System.out.println("The image name is" + imageName);
     }
 }

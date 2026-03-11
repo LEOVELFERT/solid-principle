@@ -1,7 +1,7 @@
 package behavioural.momentopattern;
 
 import java.util.Stack;
-
+//CareTaker
 public class TextEditorCareTaker {
     Stack<TextEditorMomento> history = new Stack<>();
 

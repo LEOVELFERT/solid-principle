@@ -3,7 +3,7 @@ package structural.flyweight.withoutpattern;
 public class Bullet {
     private String color;      // instrisic propery shared by all bullets
     private int x, y;          // Extrinsic property unique to each bullet
-    private int velocity;      // Extrinsic property uniqu to each bullet
+    private int velocity;      // Extrinsic property unique to each bullet
 
     public Bullet(String color, int x, int y, int velocity) {
         this.color = color;
